@@ -44,7 +44,9 @@
     "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
+    "morgan-body": "^2.6.8",
     "mustache": "^4.2.0",
+    "node-fetch": "^2.6.9",
     "node-jose": "^2.0.0",
     "uuid": "^9.0.0",
     "xpath": "0.0.32"

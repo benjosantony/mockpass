@@ -2,6 +2,8 @@
 const fs = require('fs')
 const express = require('express')
 const morgan = require('morgan')
+const morganbody = require('morgan-body')
+const bodyParser = require('body-parser')
 const path = require('path')
 require('dotenv').config()
 
@@ -46,7 +48,9 @@ const options = {
 }
 
 const app = express()
-app.use(morgan('combined'))
+app.use(bodyParser.json())
+app.use(morgan('dev'))
+morganbody(app)
 
 configOIDC(app, options)
 configOIDCv2(app, options)
