@@ -1,5 +1,5 @@
 tasks:
   - init: npm install 
-    command: SHOW_LOGIN_PAGE=true npm start
+    command: SP_RP_JWKS_ENDPOINT=https://stg-id.corppass.gov.sg/cpauth/.well-known/keys SHOW_LOGIN_PAGE=true npm start
 ports:
   - port: 5156
